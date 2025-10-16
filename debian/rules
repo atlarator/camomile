@@ -1,4 +1,75 @@
 #!/usr/bin/make -f
+# debian/rules for camomile package
+# Copyright (C) 2006-2008 Sylvain Le Gall <gildor@debian.org>
+#				2018 Kyle Robbertze <krobbertze@gmail.com>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as
+# published by the Free Software Foundation; either version 2, or (at
+# your option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+# MA 02110-1301, USA.
+
+include /usr/share/ocaml/ocamlvars.mk
+
+DESTDIR := $(CURDIR)/debian/tmp
+
+DEB_CONFIGURE_EXTRA_FLAGS := --share=$(DESTDIR)/usr/share
+export OCAMLFIND_DESTDIR=$(DESTDIR)$(OCAML_STDLIB_DIR)
+
+PO4A_SOURCES := $(CURDIR)/debian/xml-man/po4a/po4a.cfg
+
+PO4A_BUILD_FLAGS:= --rm-backups
+
+DOCBOOK_MANPAGE_XSLTPROC_FLAGS := --nonet --xinclude --param man.charmap.use.subset 0
+DOCBOOK_MANPAGE_XSLTPROC_XSL := /usr/share/xml/docbook/stylesheet/nwalsh/manpages/docbook.xsl
+
+DOCBOOK_MANPAGE_SOURCES := $(CURDIR)/debian/xml-man/en/camomilecharmap.xml  \
+                           $(CURDIR)/debian/xml-man/en/camomilelocaledef.xml \
+			   $(CURDIR)/debian/xml-man/de/camomilecharmap.xml  \
+                           $(CURDIR)/debian/xml-man/de/camomilelocaledef.xml \
+			   $(CURDIR)/debian/xml-man/pt/camomilecharmap.xml  \
+                           $(CURDIR)/debian/xml-man/pt/camomilelocaledef.xml
 
 %:
-	dh $@
+	dh $@ --with ocaml
+
+override_dh_autoreconf:
+	ocaml configure.ml
+
+override_dh_auto_configure:
+	ocaml configure.ml
+
+override_dh_auto_build:
+	[ -f debian/autoreconf.before ] || dh_autoreconf
+	dune build -p camomile @install --verbose
+
+override_dh_ocamldoc:
+	po4a $(PO4A_BUILD_FLAGS) $(PO4A_SOURCES)
+	xsltproc $(DOCBOOK_MANPAGE_XSLTPROC_FLAGS) -o $(CURDIR)/debian/manpages/ \
+		$(DOCBOOK_MANPAGE_XSLTPROC_XSL) $(DOCBOOK_MANPAGE_SOURCES)
+
+override_dh_auto_test:
+	true
+
+override_dh_auto_install:
+	mkdir -p $(OCAMLFIND_DESTDIR)
+	dune install --prefix=$(DESTDIR)/usr --libdir=$(OCAMLFIND_DESTDIR) --verbose
+
+override_dh_strip:
+	dh_strip --no-automatic-dbgsym
+
+override_dh_auto_clean:
+	dh_autoreconf_clean
+	dh_clean
+	rm -f debian/camomilecharmap*1 debian/camomilelocaledef*1
+	rm -rf debian/xml-man/pt
+	rm -rf debian/xml-man/de

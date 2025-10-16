@@ -1,0 +1,2 @@
+-I Camomile/public/ -I Camomile/internal/
+--include debian/tmp/usr/lib/ocaml/camomile
