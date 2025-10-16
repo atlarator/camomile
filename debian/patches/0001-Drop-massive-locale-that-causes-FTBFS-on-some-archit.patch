@@ -1,0 +1,43 @@
+From: Stephane Glondu <steph@glondu.net>
+Date: Sat, 7 Oct 2023 08:47:43 +0200
+Subject: Drop massive locale that causes FTBFS on some architectures
+
+---
+ src/locales/dune.inc  | 7 -------
+ src/locales/index.txt | 1 -
+ 2 files changed, 8 deletions(-)
+
+diff --git a/src/locales/dune.inc b/src/locales/dune.inc
+index 76c250a..9ed9501 100644
+--- a/src/locales/dune.inc
++++ b/src/locales/dune.inc
+@@ -282,7 +282,6 @@ zh_MO.mar
+ zh_SG.mar
+ zh_TW.mar
+ zh_TW_STROKE.mar
+-zh__PINYIN.mar
+  ))
+ 
+ (alias
+@@ -1963,9 +1962,3 @@ zh__PINYIN.mar
+  (deps    (:x zh_TW_STROKE.txt) (alias database))
+  (action  (run ../tools/camomilelocaledef.exe --file %{x} .)))
+ 
+-
+-(rule
+- (targets zh__PINYIN.mar)
+- (deps    (:x zh__PINYIN.txt) (alias database))
+- (action  (run ../tools/camomilelocaledef.exe --file %{x} .)))
+-
+diff --git a/src/locales/index.txt b/src/locales/index.txt
+index f445ea1..fc8aded 100644
+--- a/src/locales/index.txt
++++ b/src/locales/index.txt
+@@ -277,7 +277,6 @@ index {
+         vi,
+         vi_VN,
+         zh,
+-        zh__PINYIN,
+         zh_CN,
+         zh_HK,
+         zh_MO,

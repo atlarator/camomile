@@ -1,22 +1,101 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+Source: https://github.com/yoriyuki/Camomile
+Upstream-Name: Yamagata Yoriyuki <yoriyuki.y@gmail.com>
 
 Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
+Copyright: 2001-2018 Yamagata Yoriyuki
+License: LGPL-2+Exception
+
+Files: src/locales/*
+Copyright: 1997-2002 International Business Machines
+License: ICU-other
+ Derived from the ICU package.
+
+Files: src/charmaps/*
+Copyright: Free Software Foundation
+License: glibc-other
+ Derived from glibc (iconv). Distribution and use, even for commercial purpose,
+ is free.
+
+Files: src/unidata/*
+Copyright: Unicode, Inc.
+License: unicode-other
+ The Unicode Character Database is provided as is by Unicode, Inc. No
+ claims are made as to fitness for any particular purpose. No warranties of
+ any kind are expressed or implied. The recipient agrees to determine
+ applicability of information provided. If this file has been purchased on
+ magnetic or optical media from Unicode, Inc., the sole remedy for any claim
+ will be exchange of defective media within 90 days of receipt.
+ .
+ This disclaimer is applicable for all other data files accompanying
+ the Unicode Character Database, some of which have been compiled by the
+ Unicode Consortium, and some of which have been supplied by other sources.
+ .
+ Recipient is granted the right to make copies in any form for internal
+ distribution and to freely use the information supplied in the creation of
+ products supporting the Unicode Standard. The files in the
+ Unicode Character Database can be redistributed to third parties or other
+ organizations (whether for profit or not) as long as this notice and the
+ disclaimer notice are retained. Information can be extracted from these
+ files and used in documentation or programs, as long as there is an
+ accompanying notice indicating the source.
+
+Files: src/unidata/tr10/*
+Copyright: 1991-2008 Unicode Inc.
+License: allkey-other
+ The file allkey.txt is obtained from Unicode Consortium Web site. Its copyright
+ is owned by Unicode Consortium.  Its use, reproduction, distribution are
+ permitted under the term of http://www.unicode.org/copyright.html.
+ .
+ See README.unidata of package libcamomile-ocaml-data.
+
+Files: src/internal/stringPrep_data.ml
+Copyright: 2010 Pierre Chambart
+License: LGPL-2+Exception
+
+Files: src/tools/camomilestringprep.ml src/tools/parse_age.ml
+Copyright: 2010 Pierre Chambart
+           2011 Yoriyuki Yamagata
+License: LGPL-2+Exception
+
+Files: src/public/uCharInfo.ml
+Copyright: 2002 Yamagata Yoriyuki
+           2010 Pierre Chambart
+License: LGPL-2+Exception
+
+Files: debian/*
+Copyright: 2006-2008 Sylvain Le Gall
+           2018 Kyle Robbertze <krobbertze@gmail.com>
 License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+
+License: LGPL-2+Exception
+ This library is free software; you can redistribute it and/or modify it under
+ the terms of the GNU Lesser General Public License as published by the Free
+ Software Foundation; either version 2 of the License, or (at your option) any
+ later version.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ As a special exception to the GNU Library General Public License, you may link,
+ statically or dynamically, a "work that uses this library" with a publicly
+ distributed version of this library to produce an executable file containing
+ portions of this library, and distribute that executable file under terms of
+ your choice, without any of the additional requirements listed in clause 6 of
+ the GNU Library General Public License. By "a publicly distributed version of
+ this library", we mean either the unmodified Library as distributed by the
+ authors, or a modified version of this library that is distributed under the
+ conditions defined in clause 3 of the GNU Library General Public License. This
+ exception does not however invalidate any other reasons why the executable file
+ might be covered by the GNU Library General Public License.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
+ This library is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
  .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+ The license text is contained in /usr/share/common-licenses/LGPL.
+
+License: GPL-2+
+ This is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ (GPL) as published by the Free Software Foundation; either version
+ 2 of the License, or (at your option) any later version.
+ .
+ The license text is contained in /usr/share/common-licenses/GPL.

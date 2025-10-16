@@ -1,0 +1,303 @@
+# German translation of the camomile manpage.
+# Copyright © 2001-2006 Yamagata Yoriyuki.
+# This file is distributed under the same license as the camomile package.                                                    package.
+# Copyright of this file © 2017 Chris Leick <c.leick@vollbio.de>.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: camomile 0.8.4-4\n"
+"Report-Msgid-Bugs-To: debian-ocaml-maint@lists.debian.org\n"
+"POT-Creation-Date: 2011-07-29 19:24+0300\n"
+"PO-Revision-Date: 2018-12-23 07:00+0100\n"
+"Last-Translator: Chris Leick <c.leick@vollbio.de>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. type: Content of the debian entity
+#: debian/xml-man/en/camomilecharmap.xml:4 debian/xml-man/en/camomilelocaledef.xml:4 debian/xml-man/en/license.xml:4
+msgid "Debian GNU/Linux"
+msgstr "Debian GNU/Linux"
+
+#. type: Content of the dhprg entity
+#: debian/xml-man/en/camomilecharmap.xml:5
+msgid "<command>camomilecharmap</command>"
+msgstr "<command>camomilecharmap</command>"
+
+#. type: Content of the camomile entity
+#: debian/xml-man/en/camomilecharmap.xml:6 debian/xml-man/en/camomilelocaledef.xml:6
+msgid "camomile"
+msgstr "camomile"
+
+#. type: Content of: <refentry><refmeta><refentrytitle>
+#: debian/xml-man/en/camomilecharmap.xml:39
+msgid "CAMOMILECHARMAP"
+msgstr "CAMOMILECHARMAP"
+
+#. type: Content of: <refentry><refmeta><manvolnum>
+#: debian/xml-man/en/camomilecharmap.xml:40 debian/xml-man/en/camomilelocaledef.xml:40
+msgid "1"
+msgstr "1"
+
+#. type: Content of: <refentry><refmeta><refmiscinfo><manual>
+#: debian/xml-man/en/camomilecharmap.xml:42 debian/xml-man/en/camomilelocaledef.xml:42
+msgid "USER COMMANDS"
+msgstr "BENUTZERBEFEHLE"
+
+#. type: Content of: <refentry><refnamediv><refname>
+#: debian/xml-man/en/camomilecharmap.xml:47 debian/xml-man/en/camomilelocaledef.xml:47
+msgid "&dhprg;"
+msgstr "&dhprg;.de"
+
+#. type: Content of: <refentry><refnamediv><refpurpose>
+#: debian/xml-man/en/camomilecharmap.xml:49
+msgid "a charmap database translator for &camomile;."
+msgstr "eine Übersetzungsdatenbank der Zeichentabelle für &camomile;"
+
+#. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
+#: debian/xml-man/en/camomilecharmap.xml:54
+msgid ""
+"&dhprg; <arg choice=\"opt\">-d <arg choice=\"req\"> "
+"<replaceable>dir</replaceable> </arg> </arg> <group> <arg "
+"choice=\"plain\">-help</arg> <arg choice=\"plain\">--help</arg> </group> "
+"<arg choice=\"opt\"> <replaceable>file</replaceable> </arg>"
+msgstr ""
+"&dhprg; <arg choice=\"opt\">-d <arg choice=\"req\"> "
+"<replaceable>Verzeichnis</replaceable> </arg> </arg> <group> <arg "
+"choice=\"plain\">-help</arg> <arg choice=\"plain\">--help</arg> </group> "
+"<arg choice=\"opt\"> <replaceable>Datei</replaceable> </arg>"
+
+#. type: Content of: <refentry><refsect1><title>
+#: debian/xml-man/en/camomilecharmap.xml:71 debian/xml-man/en/camomilelocaledef.xml:76
+msgid "DESCRIPTION"
+msgstr "BESCHREIBUNG"
+
+#. type: Content of: <refentry><refsect1><para>
+#: debian/xml-man/en/camomilecharmap.xml:73 debian/xml-man/en/camomilelocaledef.xml:78
+msgid "This manual page documents briefly the &dhprg; command."
+msgstr "Diese Handbuchseite dokumentiert kurz den Befehl &dhprg;."
+
+#. type: Content of: <refentry><refsect1><para>
+#: debian/xml-man/en/camomilecharmap.xml:75 debian/xml-man/en/camomilelocaledef.xml:80
+msgid ""
+"This manual page was written for the &debian; distribution because the "
+"original program does not have a manual page."
+msgstr ""
+"Diese Handbuchseite wurde für die Debian-Distribution geschrieben, da das "
+"Originalprogramm keine Handbuchseite hat."
+
+#. type: Content of: <refentry><refsect1><para>
+#: debian/xml-man/en/camomilecharmap.xml:78
+msgid ""
+"&dhprg; is made to convert standard charmap file into "
+"<filename>.mar</filename> file. This convert a standard charmap file into "
+"the internal database format of &camomile;."
+msgstr ""
+"&dhprg; wurde erstellt, um eine Zeichentabellendatei in eine "
+"<filename>.mar</filename>-Datei umzuwandeln. Dies wandelt eine reguläre "
+"Zeichentabellendatei in das interne Datenbankformat von &camomile; um."
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
+#: debian/xml-man/en/camomilecharmap.xml:85
+msgid "<option>-d <parameter>dir</parameter> </option>"
+msgstr "<option>-d <parameter>Verzeichnis</parameter> </option>"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: debian/xml-man/en/camomilecharmap.xml:90
+msgid "Output directory."
+msgstr "Ausgabeverzeichnis"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
+#: debian/xml-man/en/camomilecharmap.xml:96 debian/xml-man/en/camomilelocaledef.xml:112
+msgid "<option>-help</option>"
+msgstr "<option>-help</option>"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
+#: debian/xml-man/en/camomilecharmap.xml:99 debian/xml-man/en/camomilelocaledef.xml:115
+msgid "<option>--help</option>"
+msgstr "<option>--help</option>"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: debian/xml-man/en/camomilecharmap.xml:102 debian/xml-man/en/camomilelocaledef.xml:118
+msgid "Display help message."
+msgstr "zeigt eine Hilfenachricht."
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
+#: debian/xml-man/en/camomilecharmap.xml:108
+msgid "file"
+msgstr "Datei"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: debian/xml-man/en/camomilecharmap.xml:111
+msgid "Charmap file."
+msgstr "Zeichentabellendatei"
+
+#. type: Content of: <refentry><refsect1><title>
+#: debian/xml-man/en/camomilecharmap.xml:119 debian/xml-man/en/camomilelocaledef.xml:135
+msgid "SEE ALSO"
+msgstr "SIEHE AUCH"
+
+#. type: Content of: <refentry><refsect1><para>
+#: debian/xml-man/en/camomilecharmap.xml:122
+msgid ""
+"<citerefentry> <refentrytitle>camomilelocaledef</refentrytitle> "
+"<manvolnum>1</manvolnum> </citerefentry>"
+msgstr ""
+"<citerefentry> <refentrytitle>camomilelocaledef</refentrytitle> "
+"<manvolnum>1</manvolnum> </citerefentry>"
+
+#. type: Content of the dhprg entity
+#: debian/xml-man/en/camomilelocaledef.xml:8
+msgid "<command>camomilelocaledef</command>"
+msgstr "<command>camomilelocaledef</command>"
+
+#. type: Content of: <refentry><refmeta><refentrytitle>
+#: debian/xml-man/en/camomilelocaledef.xml:42
+msgid "CAMOMILELOCALEDEF"
+msgstr "CAMOMILELOCALEDEF"
+
+#. type: Content of: <refentry><refnamediv><refpurpose>
+#: debian/xml-man/en/camomilelocaledef.xml:49
+msgid "a localedef database translator for &camomile;."
+msgstr "ein Localedef-Datenbankübersetzer für &camomile;"
+
+#. type: Content of: <refentry><refsynopsisdiv><cmdsynopsis>
+#: debian/xml-man/en/camomilelocaledef.xml:54
+msgid ""
+"&dhprg; <arg choice=\"opt\">--enc <arg choice=\"req\"> "
+"<replaceable>encoding</replaceable> </arg> </arg> <arg choice=\"opt\">--file "
+"<arg choice=\"req\"> <replaceable>file</replaceable> </arg> </arg> <group> "
+"<arg choice=\"plain\">-help</arg> <arg choice=\"plain\">--help</arg> "
+"</group> <arg choice=\"opt\"> <replaceable>dir</replaceable> </arg>"
+msgstr ""
+"&dhprg; <arg choice=\"opt\">--enc <arg choice=\"req\"> "
+"<replaceable>Kodierung</replaceable> </arg> </arg> <arg choice=\"opt\">--file "
+"<arg choice=\"req\"> <replaceable>Datei</replaceable> </arg> </arg> <group> "
+"<arg choice=\"plain\">-help</arg> <arg choice=\"plain\">--help</arg> "
+"</group> <arg choice=\"opt\"> <replaceable>Verzeichnis</replaceable> </arg>"
+
+#. type: Content of: <refentry><refsect1><para>
+#: debian/xml-man/en/camomilelocaledef.xml:83
+msgid ""
+"&dhprg; is made to convert standard localedef file into "
+"<filename>.mar</filename> files. This convert and split a standard localedef "
+"file into the internal database format of &camomile;."
+msgstr ""
+"&dhprg; wurde erstellt, um eine reguläre Localdef-Datei in eine "
+"<filename>.mar</filename>-Datei umzuwandeln. Dies wandelt eine reguläre "
+"Localdef-Datei in das interne Datenbankformat von &camomile; um."
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
+#: debian/xml-man/en/camomilelocaledef.xml:90
+msgid "<option>--enc <parameter>encoding</parameter> </option>"
+msgstr "<option>--enc <parameter>Kodierung</parameter> </option>"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: debian/xml-man/en/camomilelocaledef.xml:95
+msgid "Encoding used for reading the input file. If omitted, default to UTF-8."
+msgstr ""
+"Kodierung, die zum Lesen der Eingabedatei verwendet werden soll. Wird sie "
+"weggelassen, wird die Voreinstellung UTF-8 genommen."
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
+#: debian/xml-man/en/camomilelocaledef.xml:101
+msgid "<option>--file <parameter>file</parameter> </option>"
+msgstr "<option>--file <parameter>Datei</parameter> </option>"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: debian/xml-man/en/camomilelocaledef.xml:106
+msgid "Input localedef file. If ommited, use <filename>stdin</filename>."
+msgstr ""
+"Eingabe-Localdef-Datei. Falls sie weggelassen wird, wird "
+"<filename>stdin</filename> benutzt."
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><term>
+#: debian/xml-man/en/camomilelocaledef.xml:124
+msgid "dir"
+msgstr "Verzeichnis"
+
+#. type: Content of: <refentry><refsect1><variablelist><varlistentry><listitem><para>
+#: debian/xml-man/en/camomilelocaledef.xml:127
+msgid "Output directory. If omitted, default to the current directory."
+msgstr ""
+"Ausgabeverzeichnis. Falls es weggelassen wird, wird das aktuelle Verzeichnis "
+"als Voreinstellung genommen."
+
+#. type: Content of: <refentry><refsect1><para>
+#: debian/xml-man/en/camomilelocaledef.xml:138
+msgid ""
+"<citerefentry> <refentrytitle>camomilecharmap</refentrytitle> "
+"<manvolnum>1</manvolnum> </citerefentry>"
+msgstr ""
+"<citerefentry> <refentrytitle>camomilecharmap</refentrytitle> "
+"<manvolnum>1</manvolnum> </citerefentry>"
+
+#. type: Content of: <refsect1><title>
+#: debian/xml-man/en/license.xml:35
+msgid "LICENSE"
+msgstr "LIZENZ"
+
+#. type: Content of: <refsect1><para>
+#: debian/xml-man/en/license.xml:38
+msgid ""
+"This manual page was written by <personname> <firstname>Sylvain</firstname> "
+"<surname>Le Gall</surname> </personname> <email>gildor@debian.org</email> "
+"for the Debian GNU/Linux system (but may be used by others).  Permission is "
+"granted to copy, distribute and/or modify this document under the terms of "
+"the <acronym>GNU</acronym> Lesser General Public License, Version 2.1 or any "
+"later version published by the Free Software Foundation; considering as "
+"source code all the file that enable the production of this manpage."
+msgstr ""
+"Diese Handbuchseite wurde von <personname> <firstname>Sylvain</firstname> "
+"<surname>Le Gall</surname> </personname> <email>gildor@debian.org</email> für "
+"das Debian-GNU/Linux-System geschrieben (kann aber auch von Anderen benutzt "
+"werden). Die Rechte, dieses Dokument zu kopieren, weiterzugeben und/oder zu "
+"verändern, werden durch die Bedingungen der <acronym>GNU</acronym> Lesser "
+"General Public License, Version 2.1 oder jeder neueren Version, die durch die "
+"Free Software Foundation veröffentlicht wird, gewährt. Alle Dateien, die die "
+"Erstellung dieser Handbuchseite ermöglichen, werden als Quelltext angesehen."
+
+#. **********************************************************************
+#.  refentryinfo.xml                                                     
+#.                                                                       
+#.  Copyright (C) 2006 Sylvain Le Gall <gildor@debian.org>
+#.                
+#.                                                                       
+#.  This library is free software; you can redistribute it and/or        
+#.  modify it under the terms of the GNU Lesser General Public           
+#.  License as published by the Free Software Foundation; either         
+#.  version 2.1 of the License, or (at your option) any later version;   
+#.  with the OCaml static compilation exception.                         
+#.                                                                       
+#.  This library is distributed in the hope that it will be useful,      
+#.  but WITHOUT ANY WARRANTY; without even the implied warranty of       
+#.  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU    
+#.  Lesser General Public License for more details.                      
+#.                                                                       
+#.  You should have received a copy of the GNU Lesser General Public     
+#.  License along with this library; if not, write to the Free Software  
+#.  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,               
+#.  MA 02110-1301, USA.                                                  
+#.                                                                       
+#.  Contact: gildor@debian.org                                           
+#. **********************************************************************
+#. type: Content of: <refentryinfo>
+#: debian/xml-man/en/refentryinfo.xml:31
+msgid ""
+"  <author> <firstname>Sylvain</firstname> <surname>Le Gall</surname> "
+"<email>gildor@debian.org</email> </author> <copyright> <year>2006</year> "
+"<holder>Sylvain Le Gall</holder> </copyright> <date>Oct 23, 2006</date> "
+"<corpname>Debian</corpname>"
+msgstr ""
+"  <author> <firstname>Sylvain</firstname> <surname>Le Gall</surname> "
+"<email>gildor@debian.org</email> </author> <copyright> <year>2006</year> "
+"<holder>Sylvain Le Gall</holder> </copyright> <date>23.Okt. 2006</date> "
+"<corpname>Debian</corpname>"
+
+#. type: Content of: outside any tag (error?)
+#: debian/xml-man/en/refentryinfo.xml:30
+msgid "<placeholder type=\"refentryinfo\" id=\"0\"/>"
+msgstr "<placeholder type=\"refentryinfo\" id=\"0\"/>"

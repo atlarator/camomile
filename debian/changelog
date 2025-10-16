@@ -1,5 +1,301 @@
-template-repository (1.0-1) unstable; urgency=medium
+camomile (2.0.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Drop massive locale that causes FTBFS on some architectures
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 07 Oct 2023 08:49:33 +0200
+
+camomile (2.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+    - update Homepage, debian/watch
+  * Bump Standards-Version to 4.6.2
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 07 Oct 2023 06:59:29 +0200
+
+camomile (1.0.2+2-1) unstable; urgency=medium
+
+  * Team upload
+  * Change upstream tarball, with properly set version number
+  * Fix debian/watch to follow the correct upstream tarballs
+  * Bump Standards-Version to 4.6.0
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 10 Jan 2022 10:25:46 +0100
+
+camomile (1.0.2-3) unstable; urgency=medium
+
+  [ Stéphane Glondu ]
+  * Team upload
+  * Build-depend on ocaml-dune
+  * Bump debhelper compat level to 13
+  * Add Rules-Requires-Root: no
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 27 Sep 2020 11:58:40 +0200
+
+camomile (1.0.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Call "dune build" with -p to not treat warning as errors
+
+ -- Stéphane Glondu <glondu@debian.org>  Mon, 19 Aug 2019 05:13:10 +0200
+
+camomile (1.0.2-1) unstable; urgency=medium
+
+  * New upstream version 1.0.2
+  * Bump Standards-Version to 4.4.0 (no change)
+  * Bump compat to 12
+  * Refresh patches
+  * Rename jbuilder to dune
+  * Explicitly list files not installed
+
+ -- Kyle Robbertze <paddatrapper@debian.org>  Sun, 11 Aug 2019 13:59:14 +0200
+
+camomile (1.0.1-5) unstable; urgency=medium
+
+  * Team upload
+  * Remove camlp4 from Build-Depends
+
+ -- Stéphane Glondu <glondu@debian.org>  Wed, 07 Aug 2019 11:39:53 +0200
+
+camomile (1.0.1-4) unstable; urgency=low
+
+  * Rebuild for source-only upload
+  * Update maintainer email
+
+ -- Kyle Robbertze <paddatrapper@debian.org>  Sun, 14 Jul 2019 07:03:04 +0200
+
+camomile (1.0.1-3) unstable; urgency=medium
+
+  * Remove build path in compiled artifacts (Closes: #922271)
+
+ -- Kyle Robbertze <krobbertze@gmail.com>  Fri, 15 Feb 2019 08:21:51 +0200
+
+camomile (1.0.1-2) unstable; urgency=medium
+
+  * Use dune package instead of jbuilder
+  * Remove broken symlinks (Closes: #919837)
+  * Drop zh__PINYIN locale (Closes: #918562, #918563)
+  * Install files in the correct location (Closes: #919658)
+  * Bump Standards-Version to 4.3.0 (no change)
+
+ -- Kyle Robbertze <krobbertze@gmail.com>  Tue, 29 Jan 2019 12:28:38 +0200
+
+camomile (1.0.1-1) unstable; urgency=medium
+
+  * New upstream version 1.0.1
+  * Add new uploader (Closes: #717786)
+  * Bump Standards-Version (changed VCS-* to use salsa)
+  * Move copyright to machine readable format
+  * Update watch file to correctly find new releases
+  * Bump dependency versions
+  * Update Portuguese translation (Closes: #758118), thanks to Américo Monteiro
+  * Add German manuall translations (Closes: #865968), thanks to Chris Leick
+  * Drop stale patches
+  * Restructured installed files to reflect new upstream structure
+  * Move to debhelper from CDBS
+
+ -- Kyle Robbertze <krobbertze@gmail.com>  Sat, 10 Nov 2018 20:25:20 +0200
+
+camomile (0.8.5-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Update Homepage and watch to point to github
+  * Import upstream fix for OCaml 4.05
+  * Update Vcs-*
+  * Bump debhelper compat to 10
+  * Remove empty directory /usr/bin from libcamomile-ocaml-dev
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 18 Jul 2017 10:13:05 +0200
+
+camomile (0.8.4-4) unstable; urgency=low
+
+  * Team upload
+  * Upload to unstable
+
+ -- Stéphane Glondu <glondu@debian.org>  Tue, 03 Dec 2013 19:53:29 +0100
+
+camomile (0.8.4-3) experimental; urgency=low
+
+  [ Stéphane Glondu ]
+  * Team upload
+  * Compile with OCaml >= 4
+
+  [ Sylvain Le Gall ]
+  * Remove Sylvain Le Gall from uploaders
+
+ -- Stéphane Glondu <glondu@debian.org>  Thu, 25 Jul 2013 07:56:09 +0200
+
+camomile (0.8.4-2) unstable; urgency=high
+
+  * Team upload.
+  * Fix FTBFS with build-arch (Closes: #678722).
+  * Set urgency=high for targeted RC bug fix.
+  * Bump Standards-Version to 3.9.3 (no changes)
+
+ -- Mehdi Dogguy <mehdi@debian.org>  Mon, 25 Jun 2012 13:30:04 +0200
+
+camomile (0.8.4-1) unstable; urgency=low
+
+  * Team upload
+  * New upstream release
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 08 Jan 2012 15:10:59 +0100
+
+camomile (0.8.3-2) unstable; urgency=low
+
+  * Team upload
+  * Upload to unstable
+
+ -- Stéphane Glondu <glondu@debian.org>  Thu, 11 Aug 2011 22:58:00 +0200
+
+camomile (0.8.3-1) experimental; urgency=low
+
+  * Team upload
+  * New upstream release (Closes: #631640)
+  * Switch source package format to 3.0 (quilt)
+  * Bump Standards-Version to 3.9.2 (no changes)
+
+ -- Stéphane Glondu <glondu@debian.org>  Fri, 29 Jul 2011 18:56:12 +0200
+
+camomile (0.7.2-2) unstable; urgency=low
+
+  * Upgrade standards-version to 3.8.3 (no change)
+  * Use dh-ocaml 0.9 features
+
+ -- Sylvain Le Gall <gildor@debian.org>  Tue, 03 Nov 2009 22:34:10 +0000
+
+camomile (0.7.2-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Upgrade standards-version to 3.8.2 (section ocaml)
+  * Tighten Build Depends for OCaml 3.11.1 transition (findlib)
+
+ -- Sylvain Le Gall <gildor@debian.org>  Thu, 02 Jul 2009 21:58:22 +0000
+
+camomile (0.7.1-5) unstable; urgency=low
+
+  * Switch packaging to git
+  * Remove obsolete debian/control.in related variables and files
+  * Remove dpkg-dev build-dependency since source:Version is now
+    standard
+  * Add dh-ocaml build-dependency (rules/ocaml.mk)
+  * Set maintainer to Debian OCaml Maintainers
+  * Upgrade debian/compat to 7 (use debian/clean)
+  * Upgrade Standards-Version to 3.8.0 (debian/README.source)
+  * Add Homepage field to debian/control
+
+ -- Sylvain Le Gall <gildor@debian.org>  Thu, 05 Mar 2009 12:41:41 +0100
+
+camomile (0.7.1-4) experimental; urgency=low
+
+  [ Sylvain Le Gall ]
+  * Use ocaml 3.10.0-9 for generating .ocamldoc-apiref automatically
+
+  [ Stefano Zacchiroli ]
+  * fix vcs-svn field to point just above the debian/ dir
+
+  [ Romain Beauxis ]
+  * Upload to experimental to build against ocaml 3.11
+  * Versioned ocaml-relared build-deps to avoid confusion.
+  * Added build-dep on dh-ocaml.
+
+ -- Romain Beauxis <toots@rastageeks.org>  Sun, 14 Dec 2008 00:11:29 +0100
+
+camomile (0.7.1-3) unstable; urgency=low
+
+  * Build for ocaml 3.10.0
+  * Move API documentation in to usr/share/doc/libcamomile-ocaml-dev/html/api
+
+ -- Sylvain Le Gall <gildor@debian.org>  Tue, 04 Sep 2007 00:26:44 +0200
+
+camomile (0.7.1-2) experimental; urgency=low
+
+  * Change email address to gildor@debian.org everywhere
+  * Upgrade debian/watch version to 3,
+  * Use ocaml.mk for CDBS,
+  * Add extra double quote to protect the variable inside the
+    Makefile,
+  * Modify debian/xml-man/Makefile to disable result output
+    of xmllint command,
+  * Modify debian/xml-man/*.xml to remove some comments,
+  * Remove ocaml-nox depends in debian/control.in (added through
+    ocaml.mk),
+  * Remove libcamomile-ocaml-dev.dirs when cleaning (generated by
+    ocaml.mk),
+  * Change watch URL to sf.net
+  * Use CDBS docbook classes and po4a for documentation
+  * Rebuild for ocaml 3.10.0
+  * Add camlp4 dependency
+
+ -- Sylvain Le Gall <gildor@debian.org>  Sun, 08 Jul 2007 01:43:41 +0200
+
+camomile (0.7.1-1) unstable; urgency=low
+
+  * New upstream release, ship with META.in (Closes: #389470)
+  * Use CDBS for debian/rules,
+  * Upgrade debhelper debian/compat to 5,
+  * Write manpages for camomilecharmap and camomilelocaledef,
+
+ -- Sylvain Le Gall <gildor@debian.org>  Tue, 24 Oct 2006 01:05:04 +0200
+
+camomile (0.6.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Correct standards version (3.7.2.0->3.7.2)
+  * Remove Debian OCaml Maintainer as uploader (this is non sense)
+
+ -- Sylvain Le Gall <gildor@debian.org>  Tue, 11 Jul 2006 22:46:25 +0200
+
+camomile (0.6.5-1) unstable; urgency=low
+
+  * New upstream release,
+  * Change my email address,
+  * Acknowledge NMU from Ralf Treinen (thanks for doing it),
+  * Upgrade standards version to 3.7.2.0 (no change),
+  * Apply a tip to made the package binNMU safe, thanks to Aaron M. Ucko, for
+    suggesting to use dpkg-dev(>= 1.13.19) and substituting ${source:Version}
+    for ${Source-Version} (Closes: #370007),
+  * Add debian-ocaml-maint@lists.debian.org as uploaders... because this
+    package stands in the pkg-ocaml-maint snv repository,
+
+ -- Sylvain Le Gall <gildor@debian.org>  Fri,  9 Jun 2006 00:30:18 +0200
+
+camomile (0.6.3-3.1) unstable; urgency=low
+
+  * NMU for transition OCaml 3.09.1 -> 3.09.2
+  * Rebuild for OCaml 3.09.2
+  * debian/rules: declared the target "debian/control" as phony
+
+ -- Ralf Treinen <treinen@debian.org>  Wed,  7 Jun 2006 22:46:20 +0200
+
+camomile (0.6.3-3) unstable; urgency=low
+
+  * Rebuild for OCaml 3.09.1
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Wed, 11 Jan 2006 22:45:08 +0100
+
+camomile (0.6.3-2) unstable; urgency=low
+
+  * Update patch makefile to support compilation on non-opt platform
+    (Closes: #343874)
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Mon, 19 Dec 2005 23:45:08 +0100
+
+camomile (0.6.3-1) unstable; urgency=low
+
+  * Initial upload ( closes: #211991 )
+  * Split packages into libcamomile-ocaml-dev and libcamomile-ocaml-data
+    because there is a lot of arch-indep data file
+  * The name of the package in the archive will be libcamomile-ocaml-dev
+    following the ocaml policy convention
+  * Place doc in usr/share/doc/.../html as it is html doc | add an entry
+    in doc-base
+
+ -- Sylvain Le Gall <sylvain.le-gall@polytechnique.org>  Sat,  3 Dec 2005 01:18:55 +0100
